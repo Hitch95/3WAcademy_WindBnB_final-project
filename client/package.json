@@ -1,0 +1,32 @@
+{
+  "name": "windbnb",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node server",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@heroicons/react": "^1.0.6",
+    "@heroicons/vue": "^1.0.3",
+    "@jridgewell/sourcemap-codec": "^1.4.14",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql2": "^3.2.0",
+    "react": "^18.2.0",
+    "react-date-range": "^1.4.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.9.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "sass": "^1.58.3",
+    "scss": "^0.2.4",
+    "vite": "^4.1.0",
+    "vite-plugin-sass": "^0.1.0"
+  }
+}

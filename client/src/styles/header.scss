@@ -1,0 +1,248 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+
+    @media (min-width: 650px) {
+        width: 650px;
+    }
+
+    @media (min-width: 1000px) {
+        width: 1000px;
+    }
+
+    @media (min-width: 1400px) {
+        max-width: 1400px;
+    }
+
+    >div {
+        &:nth-of-type(1) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            min-height: 50px;
+            margin-bottom: 0.25rem;
+
+            > a {
+                max-width: 42px;
+                min-height: 42px;
+
+                img {
+                    max-width: 42px;
+                    min-height: 42px;
+                }
+            }
+
+            .sign-log-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                box-shadow: 0 0 5px hsl(0 0% 78%);
+                border-radius: 100vw;
+                min-height: 42px;
+                min-width: 77px;
+
+                svg {
+                    cursor: pointer;
+                    max-height: 22.38px;
+                    padding: 0px 2.5px;
+                }
+            }
+        }
+    }
+
+    .input-container {
+        background-color: #fff;
+        box-shadow: 0 0 5px hsl(0 0% 78%);
+        height: 55px;
+        border-radius: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 0.6rem;
+        width: 100%;
+
+        div {
+            border-radius: inherit;
+            padding: 0.8rem 1.5rem;
+            transition: background 250ms ease;
+
+            &:hover {
+                background: hsl(0 0% 95%);
+            }
+        }
+
+        .location {
+            width: 33%;
+        }
+
+        .check-in,
+        .check-out,
+        .guests {
+            width: 22%;
+        }
+
+        input[type="text"] {
+            background: none;
+            border: none;
+            padding: 0.2rem 0 0 0;
+            width: 100%;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                font-size: 0.7rem;
+
+                @media (min-width: 650px) {
+                    font-size: 0.75rem;
+                }
+            }
+        }
+
+        .guests {
+            position: relative;
+
+            input {
+                max-width: 70px;
+            }
+
+            span {
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                transform: translateY(-50%);
+                background: #ff385c;
+                color: white;
+                font-size: 0.8rem;
+                padding: 0.7rem;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+
+        >div {
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 1px;
+                height: 55%;
+                background: hsl(0 0% 90%);
+            }
+        }
+
+        >div {
+            &:nth-of-type(1)::before {
+            background: transparent;
+            }
+        }
+
+        >div {
+        &:hover::before {
+            background: transparent;
+        }
+    }
+    }
+
+    /*____________________________________________________________ */
+
+    .date-range-picker {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 3;
+        margin-top: 2px;
+
+            .rdrDateRangePickerWrapper {
+                /* The class container of DateRangePicker */
+                justify-content: center;
+                margin:  0 auto;
+                width: 100%;
+        }
+
+        >div {
+            &:nth-of-type(2) {
+                /* Number of Guests Div */
+                font-size: normal;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 0.4rem;
+                text-align: left;
+
+                h2 {
+                    font-weight: 500;
+                    flex-grow: 1;
+                }
+
+                >svg {
+                    height: 1.5rem;
+                    margin-right: 10px;
+                }
+
+                input {
+                    width: 2.5rem;
+                    padding-left: 0.5rem;
+                    font-size: 1.125rem;
+                    outline: none;
+                    border: none;
+                    border-radius: 1rem;
+                    color: #030303;
+                    box-shadow: 0 0 10px 1px #ff385c;
+
+                    &:focus {
+                        background-color: #fff;
+                    }
+                }
+            }
+
+            &:nth-of-type(3) {
+                /* Cancel & Search Div */
+                display: flex;
+
+                >button {
+                    flex-grow: 1;
+                    border-radius: 1rem;
+                    border: 1px solid #ff385c;
+                    background-color: #fff;
+                    cursor: pointer;
+                    font-size: 1rem;
+                    padding: 0.5rem;
+                    margin-bottom: 15px;
+
+                    &:hover {
+                        border: 1px solid #fff;
+                        background-color: #ff385c;
+                    }
+
+                    &:nth-of-type(1) {
+                        /* Cancel Button */
+                        color: #6b7280;
+
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        /* Search Button */
+                        color: #ff385c;
+
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

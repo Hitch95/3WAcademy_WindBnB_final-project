@@ -1,0 +1,50 @@
+[   
+    {   
+        "id": 1,
+        "img": "https://i.etsystatic.com/22106962/r/il/f95ab2/4294367578/il_fullxfull.4294367578_aknf.jpg",
+        "location": "Le Mans",
+        "distance": ""
+    },
+    {   
+        "id": 2,
+        "img": "https://i.pinimg.com/originals/8c/2f/31/8c2f31c573764f9bddfec95797b707f3.jpg",
+        "location": "Paris",
+        "distance": "2 hour drive"
+    },
+    {   
+        "id": 3,
+        "img": "https://i.pinimg.com/736x/4d/9a/f0/4d9af0eb92b984cfb97c65e5206cf5d9.jpg",
+        "location": "Marseille",
+        "distance": "9 hour drive"
+    },
+    {   
+        "id": 4,
+        "img": "https://www.lesaffichistes.com/wp-content/uploads/2020/05/nice-facebook.png",
+        "location": "Nice",
+        "distance": "10-11 hour drive"
+    },
+    {   
+        "id": 5,
+        "img": "https://www.lesaffichistes.com/wp-content/uploads/2021/01/Lyon-2.png",
+        "location": "Lyon",
+        "distance": "5-6 hour drive"
+    },
+    {   
+        "id": 6,
+        "img": "https://lafficherie.com/15919-superlarge_default/affiche-ville-nantes.jpg",
+        "location": "Nantes",
+        "distance": "2 hour drive"
+    },
+    {   
+        "id": 7,
+        "img": "https://lafficherie.com/13293-superlarge_default/affiche-ville-caen.jpg",
+        "location": "Caen",
+        "distance": "2 hour drive"
+    },
+    {
+        "id": 8,
+        "img": "https://lafficherie.com/16438-superlarge_default/affiche-ville-bordeaux-pont-de-pierre.jpg",
+        "location": "Bordeaux",
+        "distance": "4-5 hour drive"
+    }
+]

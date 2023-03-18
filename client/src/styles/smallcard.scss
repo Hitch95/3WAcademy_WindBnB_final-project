@@ -1,0 +1,47 @@
+.small-card {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+
+  &:hover {
+    background-color: #f7fafc;
+    transform: scale(1.05);
+  }
+
+  >div {
+    &:nth-of-type(1) {
+      position: relative;
+      height: 6rem;
+      width: 6rem;
+      border-radius: 1rem;
+
+      img {
+        border-radius: 1rem;
+        object-fit: contain;
+        object-position: top;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &:nth-of-type(2) {
+      margin-left: 1rem;
+
+      h2 {
+        text-align: left;
+        font-size: 1.25em;
+        font-weight: 500;
+      }
+
+      h3 {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #a0aec0;
+      }
+    }
+  }
+}
